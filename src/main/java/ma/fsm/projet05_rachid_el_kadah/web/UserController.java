@@ -13,7 +13,7 @@ public class UserController {
     private UserService userService;
     @GetMapping("/users/{username}")
     public User user(@PathVariable String username){
-        User user1 =userService.findUserByUsername(username);
-        return user1;
+        User user = userService.findUserByUsername(username);
+        return user;
     }
 }
